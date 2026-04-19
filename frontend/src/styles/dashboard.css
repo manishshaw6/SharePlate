@@ -1,0 +1,117 @@
+.dashboard {
+  background: #F8FAFC;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0F172A;
+  color: white;
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.logo i {
+  color: #14B8A6;
+  margin-right: 8px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-links button:hover {
+  color: #14B8A6;
+}
+
+/* MAIN */
+.main {
+  padding: 25px;
+}
+
+/* GRID (FIXED 3 CARDS) */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* CARD */
+.food-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGE */
+.food-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* BODY */
+.card-body {
+  padding: 14px;
+}
+
+.card-body h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #475569;
+}
+
+.desc {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+/* BUTTONS */
+.card-body button {
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #14B8A6;
+  color: white;
+  cursor: pointer;
+}
+
+.map-btn {
+  background: #0F172A;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,124 @@
+.post-page {
+    background:#f1f5f9;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    background:#0F172A;
+    color:white;
+    padding:15px 25px;
+}
+
+/* CONTAINER */
+.post-container {
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* IMAGE */
+.post-image img {
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+/* CONTENT */
+.post-content {
+    padding:20px;
+}
+
+/* TITLE */
+.title-row {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.title-row h2 {
+    font-size:20px;
+}
+
+/* BADGE */
+.badge {
+    background:#d1fae5;
+    color:#065f46;
+    padding:5px 10px;
+    border-radius:6px;
+    font-size:12px;
+}
+
+/* META */
+.meta p {
+    margin-top:6px;
+    font-size:14px;
+    color:#64748b;
+}
+
+.meta i {
+    margin-right:6px;
+    color:#14B8A6;
+}
+
+/* DESCRIPTION */
+.description {
+    margin-top:12px;
+    font-size:14px;
+    color:#475569;
+    line-height:1.5;
+}
+
+/* DONOR */
+.donor {
+    margin-top:12px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:14px;
+}
+
+.donor i {
+    color:#14B8A6;
+}
+
+/* ACTIONS */
+.actions {
+    margin-top:18px;
+    display:flex;
+    gap:10px;
+}
+
+/* BUTTONS */
+.map-btn {
+    flex:1;
+    padding:10px;
+    background:#e2e8f0;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.claim-btn {
+    flex:1;
+    padding:10px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.claim-btn:hover {
+    background:#0ea5a3;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .post-container {
+        margin:15px;
+    }
+}

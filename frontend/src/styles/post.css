@@ -1,0 +1,40 @@
+.post-page {
+    background:#f1f5f9;
+    min-height:100vh;
+}
+
+.navbar {
+    background:#0F172A;
+    color:white;
+    padding:15px 25px;
+}
+
+.post-container {
+    max-width:500px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.post-form {
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.post-form input,
+.post-form textarea {
+    padding:10px;
+    border:1px solid #e2e8f0;
+    border-radius:8px;
+}
+
+.post-form button {
+    background:#14B8A6;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+}

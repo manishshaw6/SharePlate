@@ -1,0 +1,102 @@
+.leaderboard-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.leaderboard-main {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 28px 24px 40px;
+}
+
+.leaderboard-header {
+  margin-bottom: 20px;
+}
+
+.leaderboard-header h2 {
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.leaderboard-header p {
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.leaderboard-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.leaderboard-empty {
+  padding: 40px 24px;
+  text-align: center;
+  color: #475569;
+}
+
+.leaderboard-table-wrapper {
+  overflow-x: auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table thead {
+  background: #f8fafc;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.leaderboard-table th {
+  color: #475569;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.leaderboard-table td {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.leaderboard-row--current {
+  background: #ecfeff;
+}
+
+.leaderboard-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.leaderboard-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #d1fae5;
+  color: #065f46;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 640px) {
+  .leaderboard-main {
+    padding: 22px 16px 32px;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 14px 12px;
+  }
+}

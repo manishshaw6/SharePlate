@@ -1,0 +1,31 @@
+.profile-page {
+    background:#f1f5f9;
+    min-height:100vh;
+}
+
+.navbar {
+    background:#0F172A;
+    color:white;
+    padding:15px 25px;
+}
+
+.profile-card {
+    max-width:400px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.avatar {
+    font-size:40px;
+    color:#14B8A6;
+    margin-bottom:10px;
+}
+
+.verified {
+    margin-top:10px;
+    color:#14B8A6;
+}

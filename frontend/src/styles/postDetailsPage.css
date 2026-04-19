@@ -1,0 +1,153 @@
+.post-details-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+.post-details-main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 16px 40px;
+}
+
+.post-details-empty {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 24px;
+  text-align: center;
+  color: #475569;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+}
+
+.post-container {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.09);
+}
+
+.post-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-content {
+  padding: 24px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.title-row h2 {
+  color: #0f172a;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ecfeff;
+  color: #0f766e;
+  border-radius: 999px;
+  padding: 7px 12px;
+  white-space: nowrap;
+}
+
+.claim-banner {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.claim-banner--owner {
+  background: #ecfeff;
+  color: #0f766e;
+}
+
+.meta {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.meta p,
+.donor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #475569;
+}
+
+.meta i,
+.donor i {
+  color: #14b8a6;
+}
+
+.description {
+  margin-top: 18px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.donor {
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.post-details-btn {
+  flex: 1;
+  min-width: 200px;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.map-btn {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.claim-btn {
+  background: #14b8a6;
+  color: #ffffff;
+}
+
+.claim-btn--disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .post-details-main {
+    padding: 22px 16px 32px;
+  }
+
+  .post-image img {
+    height: 220px;
+  }
+
+  .post-content {
+    padding: 20px;
+  }
+
+  .title-row {
+    flex-direction: column;
+  }
+}

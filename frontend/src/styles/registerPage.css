@@ -1,0 +1,142 @@
+.register-wrapper,
+.register-wrapper * {
+  box-sizing: border-box;
+}
+
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 16px;
+  background: linear-gradient(135deg, #85dac9, #f0fdfa);
+}
+
+.registerCard {
+  width: min(420px, 100%);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 38px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.brand i {
+  font-size: 45px;
+  color: #14b8a6;
+}
+
+.brand h2 {
+  margin-top: 10px;
+  color: #0f172a;
+}
+
+.register-wrapper .inputBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.register-wrapper .inputBox input,
+.register-wrapper .inputBox select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+.register-wrapper .inputBox input:focus,
+.register-wrapper .inputBox select:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+  outline: none;
+}
+
+.register-wrapper .icon-left,
+.register-wrapper .icon-right {
+  color: #14b8a6;
+}
+
+.register-wrapper .icon-left {
+  width: 20px;
+  text-align: center;
+}
+
+.register-wrapper .icon-right {
+  cursor: pointer;
+}
+
+.verification {
+  display: block;
+  margin-bottom: 18px;
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px dashed #14b8a6;
+}
+
+.verification label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0f766e;
+  font-size: 13px;
+}
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.terms input {
+  margin-top: 4px;
+}
+
+.terms a,
+.extra a {
+  color: #14b8a6;
+  text-decoration: none;
+}
+
+.register-wrapper button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.register-wrapper button:disabled {
+  background: #cbd5e1;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.register-wrapper button.enabled {
+  background: #14b8a6;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.extra {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .registerCard {
+    padding: 28px 22px;
+  }
+}

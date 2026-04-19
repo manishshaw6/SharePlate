@@ -1,0 +1,140 @@
+.login-page,
+.login-page * {
+  box-sizing: border-box;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+}
+
+.login-page .left {
+  flex: 1;
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1528605248644-14dd04022da1") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px;
+}
+
+.login-page .left::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+}
+
+.login-page .left-content {
+  position: relative;
+  z-index: 1;
+}
+
+.login-page .left i {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #2dd4bf;
+}
+
+.login-page .left h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.login-page .left p {
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+.login-page .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 30px 20px;
+}
+
+.login-page .loginBox {
+  width: min(360px, 100%);
+}
+
+.login-page .loginBox h2 {
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.login-page .inputBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login-page .inputBox input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.login-page .inputBox input:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+  outline: none;
+}
+
+.login-page .icon-left,
+.login-page .icon-right {
+  color: #14b8a6;
+}
+
+.login-page .icon-left {
+  width: 20px;
+  text-align: center;
+}
+
+.login-page .icon-right {
+  cursor: pointer;
+}
+
+.login-page button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #14b8a6;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-page button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.login-page .extra {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.login-page .extra a {
+  color: #14b8a6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-page .left {
+    min-height: 36vh;
+  }
+}
