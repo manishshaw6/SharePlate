@@ -1,17 +1,15 @@
-const fs = require("fs");
-const path = require("path");
 const multer = require("multer");
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
+const cloudinary = require("./cloudinary");
 
-const uploadsDir = path.join(__dirname, "..", "uploads");
-fs.mkdirSync(uploadsDir, { recursive: true });
-
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, uploadsDir);
+const storage = new CloudinaryStorage({
+  cloudinary,
+  params: {
+    folder: "shareplate",
+    allowed_formats: ["jpg", "png", "jpeg"],
   },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + "-" + file.originalname);
-  }
 });
 
-module.exports = multer({ storage });
+const upload = multer({ storage });
+
+module.exports = upload; // ✅ VERY IMPORTANT
